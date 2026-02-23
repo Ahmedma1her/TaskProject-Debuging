@@ -20,8 +20,23 @@ await mongoose.connect(process.env.DB_URL)
  }
 }
 connectDB();
-// first run for the server and database connection #3rd change//=>server running and db connected successfully
+// first run for the server and database connection #3rd change//=>server running and db connected successfully// starting to test with postman
 app.use("/api", taskRoutes);
+// used http://localhost:8000/api/tasks to post=>task created but there
+//  was an error with the is complete attribute as it always gives false
+
+
+//checking the task model//=> found the isCompleted attribute is of type string  
+// which is not correct //changed to  boolean and "false" to false #4th change
+
+
+//still getting the same error ,, checking the controller// committing the changes.
+
+
+
+
+
+
 
 
 
