@@ -32,9 +32,13 @@ app.use("/api", taskRoutes);
 
 //still getting the same error ,, checking the controller// committing the changes.
 
+//changes applied in controller and checked the createTasks and getTasks and they worked fine .
+
+// for the createTaskWithCheck it was working on the different route however logically every task created should be checked for duplication
+///so merging the createTask and createTaskWithCheck functions #7th change
 
 
-
+// final check on the code and testing with postman and it worked fine with the createTask function and getTasks function
 
 
 
